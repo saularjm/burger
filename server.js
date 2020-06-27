@@ -1,5 +1,5 @@
 // Require express dependency
-let express = require("express");
+const express = require("express");
 
 // Set port
 let PORT = process.env.PORT || 8080;
