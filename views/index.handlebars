@@ -1,5 +1,10 @@
-<h1>Burgers!</h1>
+<header class="text-center my-5"><h1>Burgers!</h1><hr></header>
 
+<img class="justify-content-center my-3" src="/public/assets/img/burger-pic.png" alt="burger cartoon"> 
+
+<div class="container">
+<div class="row">
+  <div class="col-4 offset-2">
 <h2>Burgers to eat!</h2>
 
 <ul>
@@ -9,8 +14,10 @@
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Burgers that have been eaten!</h2>
+<div class="col-4 offset-1">
+<h2>Devoured burgers!</h2>
 
 <ul>
   {{#each burgers}}
@@ -19,8 +26,15 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
+</div>
+</div>
 
-<h2>Add a Burger</h2>
+<div class="row justify-content-center">
+<header class="text-center mt-4"><h2>Add a Burger:</h2></header>
+</div>
+
+<div class="row justify-content-center">
 <form class="create-form">
 
   <div class="form-group">
@@ -34,5 +48,6 @@
     <input type="radio" name="devoured" value="0"> Ready to eat
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button class="btn btn-success" type="submit">Add Burger</button>
 </form>
+</div>
